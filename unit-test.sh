@@ -1,3 +1,8 @@
 echo "------ unit test start ----- "
-echo "--------- running unit test...... --------"
+
+ruby ./my-application.rb
+
+echo "==== if test failed, we should throw exception from script."
+exit 1
+
 echo "------ unit test finish ----- "
