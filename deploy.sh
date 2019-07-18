@@ -1,3 +1,3 @@
 echo "------ deploy start ----- "
-echo "--------- deploying...... --------"
+echo "--------- deploying to $1...... --------"
 echo "------ deploy finish ----- "
