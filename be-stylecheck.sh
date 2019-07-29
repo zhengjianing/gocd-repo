@@ -1,1 +1,1 @@
-echo "------ be-stylecheck task modify ----- "
+echo "------ be-stylecheck task  ----- "
