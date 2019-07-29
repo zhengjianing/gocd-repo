@@ -1,8 +1,7 @@
-echo "------ package task start ----- "
+echo "------ package task ----- "
 
-# filename="my-artifact-${GO_PIPELINE_COUNTER}.html"
-# touch $filename
+# touch my-artifact.html
 
-# echo "hello" > $filename
+# echo "hello, this is my artifact from package job" > my-artifact.html
 
-echo "------ package task finish ----- "
+# echo "------ package task finish ----- "
