@@ -1,4 +1,4 @@
-echo "------ unit test start ----- "
+echo "modify ------ unit test start ----- "
 
 # ruby ./my-application.rb
 
