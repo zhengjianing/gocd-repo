@@ -6,3 +6,8 @@ steps:
 
   - label: ':hammer: Unit Tests'
     command: 'sh unit-test.sh'
+
+  - block
+
+  - label: ':hammer: Deploy'
+    command: 'sh deploy.sh'
