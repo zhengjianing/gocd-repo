@@ -1,13 +1,10 @@
 steps:
-  - label: ':hammer: FE Compile'
-    command: 'sh fe-compile.sh'
-
-  - wait
-
   - label: ':hammer: Unit Tests'
     command: 'sh unit-test.sh'
 
-  - block
+  - wait
 
   - label: ':hammer: Deploy'
     command: 'sh deploy.sh'
+    agents:
+      queue: 'deploy'
