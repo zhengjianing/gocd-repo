@@ -1,14 +1,5 @@
 steps:
   - command: "test.sh"
     key: "unit-test"
-
-  - command: "fe-compile.sh"
-    key: "fe-compile"
-
-  - command: "package.sh"
-    key: "package"
-
-  - wait
-
-  - command: "deploy.sh"
-    key: "build"
+    artifact_paths:
+      - "coverage/*"
