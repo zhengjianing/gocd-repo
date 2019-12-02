@@ -1,1 +1,0 @@
-echo "------ fe-compile task ----- "

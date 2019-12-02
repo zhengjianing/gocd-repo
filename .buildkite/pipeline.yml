@@ -1,5 +1,9 @@
 steps:
-  - command: "unit-test.sh"
+  - name: ":hear_no_evil: test"
+    command: "unit-test.sh"
     key: "unit-test"
     artifact_paths:
       - "coverage/*"
+
+  - name: ":hear_no_evil: download"
+    command: "download.sh"
