@@ -1,9 +1,10 @@
 steps:
   - label: ':hammer: Unit Tests'
     command: 'sh unit-test.sh'
+    if: build.branch != "release"
 
-  - block: "Deploy"
-    prompt: "Deploy to production?"
+  - wait
 
   - label: ':hammer: Deploy'
     command: 'sh deploy.sh'
+    if: build.branch != "master"
