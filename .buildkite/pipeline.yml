@@ -7,4 +7,4 @@ steps:
   - wait
 
   - name: ":hear_no_evil: deploy-to-showcase"
-    command: "deploy.sh"
+    command: "deploy-showcase.sh"
