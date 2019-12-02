@@ -1,10 +1,11 @@
 steps:
-  - label: ':hammer: Unit Tests'
-    command: 'sh unit-test.sh'
-    if: build.branch != "release"
+  - command: "tests.sh"
+    key: "unit-test"
 
-  - wait
+  - command: "fe-compile.sh"
+    key: "fe-compile"
 
-  - label: ':hammer: Deploy'
-    command: 'sh deploy.sh'
-    if: build.branch != "master"
+  - command: "build.sh"
+    key: "build"
+    depends_on: "unit-test"
+    allow_dependency_failure: true
