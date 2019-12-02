@@ -2,9 +2,8 @@ steps:
   - label: ':hammer: Unit Tests'
     command: 'sh unit-test.sh'
 
-  - wait
+  - block: "Deploy"
+    prompt: "Deploy to production?"
 
   - label: ':hammer: Deploy'
     command: 'sh deploy.sh'
-    agents:
-      queue: 'deploy'
