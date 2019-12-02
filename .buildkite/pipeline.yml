@@ -1,11 +1,11 @@
 steps:
-  - command: "tests.sh"
+  - command: "test.sh"
     key: "unit-test"
 
   - command: "fe-compile.sh"
     key: "fe-compile"
 
-  - command: "build.sh"
+  - command: "deploy.sh"
     key: "build"
     depends_on: "unit-test"
     allow_dependency_failure: true
