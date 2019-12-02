@@ -5,5 +5,7 @@ steps:
     artifact_paths:
       - "coverage/*"
 
+  - wait
+  
   - name: ":hear_no_evil: download"
     command: "download.sh"
