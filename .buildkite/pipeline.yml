@@ -5,7 +5,10 @@ steps:
   - command: "fe-compile.sh"
     key: "fe-compile"
 
+  - command: "package.sh"
+    key: "package"
+
+  - wait
+
   - command: "deploy.sh"
     key: "build"
-    depends_on: "unit-test"
-    allow_dependency_failure: true
