@@ -1,11 +1,10 @@
 steps:
-  - name: ":hear_no_evil: test"
-    command: "unit-test.sh"
-    key: "unit-test"
+  - name: ":hear_no_evil: compile"
+    command: "compile.sh"
     artifact_paths:
-      - "coverage/*"
+      - "build/*"
 
   - wait
-  
-  - name: ":hear_no_evil: download"
-    command: "download.sh"
+
+  - name: ":hear_no_evil: deploy-to-showcase"
+    command: "deploy.sh"
